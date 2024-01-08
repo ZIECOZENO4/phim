@@ -1,6 +1,6 @@
 
 <template>
-  <div class="h-full flex flex-col shadow-xl overflow-y-scroll">
+  <div class="h-full flex flex-col shadow-xl overflow-y-scroll text-white">
     <div class="shadow-lg pb-3 rounded-b-3xl">
       <div class="flex rounded-b-3xl space-y-5 flex-col items-center py-7">
         <img
