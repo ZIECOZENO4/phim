@@ -27,7 +27,7 @@ const toggleScreen = () => {
     <div class="p-4 flex flex-row items-center justify-between">
       <button class=" hidden md:flex md:flex-row rounded-lg focus:outline-none focus:shadow-outline" >
         <img alt="Phim logo" class="z-10 rounded-full px-2" src="@/assets/nu.png" width="100" height="100" />
-        <a href="#" class=" font-semibold tracking-widest text-gray-300 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline text-3xl fontbold font-serif">Phim</a>
+        <a href="/" class=" font-semibold tracking-widest text-gray-300 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline text-3xl fontbold font-serif">Phim</a>
       </button>
     </div>
     <nav  class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end gap-3 md:flex-row">
@@ -48,7 +48,7 @@ const toggleScreen = () => {
     <div  class="flex flex-row justify-between w-[100vw] mx-auto -mt-5">
     <div class=" flex justify-start align-middle ">
       <button class="  rounded-lg focus:outline-none focus:shadow-outline" >
-        <a href="#" class=" font-semibold tracking-widest text-gray-300 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline text-2xl fontbold font-serif">Phim</a>
+        <a href="/" class=" font-semibold tracking-widest text-gray-300 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline text-2xl fontbold font-serif">Phim</a>
       </button>
     </div>
     <div class="ml-2 pl-3 flex flex-row gap-3 z-50">

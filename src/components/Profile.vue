@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useUser } from 'vue-clerk'
+
+const { isLoaded, isSignedIn, user } = useUser()
+</script>
 
 <template>
   <div class="h-full flex flex-col shadow-xl overflow-y-scroll text-white">
@@ -5,10 +10,10 @@
       <div class="flex rounded-b-3xl space-y-5 flex-col items-center py-7">
         <img
           class="h-28 w-28 rounded-full"
-          src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe"
+          v-if="isLoaded && isSignedIn && user" :src="user.imageUrl"
           alt="User"
         />
-        <a href="#"> <span class="text-h1">User</span></a>
+        <p v-if="isLoaded && isSignedIn && user"> <span class="text-xl font-bold">{{ user.firstName }}  {{ user.lastName }}</span></p>
       </div>
       <div
         class="grid px-7 py-2 items-center justify-around grid-cols-3 gap-4 divide-x divide-solid"
