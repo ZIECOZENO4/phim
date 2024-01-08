@@ -3,6 +3,8 @@ import SignInComponent from '../src/components/SignIn.vue'
 import SignUpComponent from '../src/components/SingnUp.vue'
 import Home from '../src/components/MainApp.vue'
 import { authMiddleware } from './authMiddleware'
+import Profile from "../src/components/DropDownPages/SmProfile.vue"
+import SmSetting from "../src/components/DropDownPages/SmSettin.vue"
 const routes = [
   {
     path: '/',
@@ -16,6 +18,16 @@ const routes = [
     path: '/signin',
     name: 'SignIn',
     component: SignInComponent
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
+  },
+  {
+    path: '/setting',
+    name: 'Setting',
+    component: SmSetting
   },
   {
     path: '/signup',
